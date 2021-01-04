@@ -15,4 +15,8 @@ export class AppComponent {
   loginWithFacebook(){
     this.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
   }
+
+  logout() {
+    this.auth.signOut();
+  }
 }
